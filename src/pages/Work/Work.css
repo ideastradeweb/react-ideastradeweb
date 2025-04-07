@@ -1,0 +1,124 @@
+
+
+.work {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #B94D8F;
+  
+  background-image: url('../../assets/background/intro.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.work-container {
+  padding: 60px 30px;
+
+  @media (min-width: 768px) {
+    padding: 60px;
+  }
+}
+
+.work__h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.work__p {
+  font-size: 17px;
+  hyphens: none;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.60);
+  margin-bottom: 50px;
+}
+
+
+/* ---- GRID ---- */
+
+.work__grid {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  overflow: clip;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  @media (min-width: 576px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   }
+
+  @media (min-width: 1700px) {
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    /* grid-auto-rows: minmax(250px, 1fr); */
+  }
+}
+
+.work__grid-item {
+  width: 100%;
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+
+  @media (min-width: 576px) {
+    padding: 40px 30;
+    gap: 30px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 50px;
+  }
+}
+
+.work__icon-wrapper {
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work__icon {
+  width: 22px;
+  min-width: 22px;
+  height: 22px;
+  color: #b74e91;
+}
+
+.code {
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
+}
+
+.padlock {
+  margin-bottom: 2px;
+}
+
+.diamond {
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  margin-top: 2px;
+}
+
+.work__h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
